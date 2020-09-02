@@ -1,0 +1,97 @@
+/* Tab Nav #1 */
+.tab-icon-door{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    fill:var(--main-grey);
+}
+
+/* Media Tb nav#1 */
+@media(max-width:900px){
+    .tab-icon-door{
+        width: 2.4rem;
+        height:2.4rem;
+    }
+}
+
+/* Tab Nav #2 */
+.tab-icon-devices{
+    width: 9.675rem;
+    height: 9.675rem;
+   
+    fill:var(--main-grey);
+}
+/* Media Tb nav#2 */
+@media(max-width:900px){
+    .tab-icon-devices{
+        width: 8rem;
+        height:8rem;
+    }
+}
+/* Tab Nav #3*/
+.tab-icon-price{
+    width: 4.375rem;
+    height: 4.375rem;
+    fill:var(--main-grey);
+}
+/* Media Tb nav#3 */
+@media(max-width:900px){
+    .tab-icon-price{
+        width: 2.4rem;
+        height:2.4rem;
+    }
+}
+
+/* TAbs */
+.tabs{
+    padding-top: 1rem;
+    
+}
+.tab-nav-container{
+    display:grid;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+    list-style: none;
+    color:var(--main-grey);
+    margin:0 12%;
+}
+/* 
+Tab Hover effect */
+
+ul li:hover{
+    color:#fff;
+    cursor: pointer;
+}
+ul li:hover svg path{
+    fill:#fff;
+    
+}
+/* The active tab */
+.active{
+    border-bottom:4px solid var(--main-red);
+}
+.tab-selected{
+    color: #fff;
+
+}
+.tab-selected svg path{
+    fill: #fff;
+}
+/* Media for tabs nav */
+@media(min-width:900px){
+    .middleScreen{
+        display: none;
+    }
+    
+}
+@media(max-width:900px) {
+    .lgScreen{
+        display: none;
+    }
+    .middleScreen{
+        margin-bottom: 0.4rem;
+        display:block;
+    }
+}
